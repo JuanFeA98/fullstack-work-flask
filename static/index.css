@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    background: #a7bdfb;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: rgb(17, 17, 17);
+    height: 45px;
+    width: 100%;
+    color:  white;
+}
+
+.Header__Logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.Header__Logo p{
+    margin-left: 10px;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.AddForm{
+    background: rgba(14, 27, 75, 0.8);
+    max-width: 500px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.AddForm input{
+    width: 80%;
+    margin: 10PX;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.AddForm input:focus{
+    outline: none;
+}
+
+button{
+    width: 40%;
+    height: 25px;
+    background: green;
+    border: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 4px black;
+}
+
+table{
+    max-width: 800px;
+    width: 80%;
+    background: yellowgreen;
+    margin: 30px auto;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+.edit-button{
+    width: 20px;
+}
+
+.Home{
+    width: 120px;
+    height: 25px;
+    margin: 20px auto;
+    background: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.ComeBack{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.Home:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 4px black;
+}
+
+
+
+
+.Table{
+    /* background: yellowgreen; */
+    max-width: 600px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+    border-left: 1px solid rgba(14, 27, 75, 1);
+    border-right: 1px solid rgba(14, 27, 75, 1);
+    /* border: 1px solid rgba(14, 27, 75, 1); */
+}
+
+.Table__title, .Table__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Table__title{
+    background: rgba(14, 27, 75, 0.9);
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.Table__content{
+    border-bottom: 1px solid rgba(14, 27, 75, 1);
+}

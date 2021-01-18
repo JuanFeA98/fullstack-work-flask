@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="/" class="Header__Logo">
+            <img src="../static/images/logo.png" alt="Logo">
+            <p>MultiApp</p>
+        </a>
+    </header>
+    {% block body %}
+    {% endblock %}
+    
+</body>
+</html>

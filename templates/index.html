@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+    <p>{{message}}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<h2>Agregar usuarios</h2>
+
+<form action="/add" method="POST" class="AddForm">
+    <input type="text" name="name" placeholder="Nombre">
+    <input type="text" name="phone" placeholder="Telefono">
+    <input type="text" name="email" placeholder="Email">
+    <button type="submit">Save</button>
+</form>
+
+    <section class="Table">
+    <div class="Table__title">
+        <p>Name</p>
+        <p>Operations</p>
+    </div>
+    {% for contact in contactos %}
+    <div class="Table__content">
+        <p>{{contact.1}}</p>
+        <div>
+            <a href="/edit/{{contact.0}}">
+                <img class="edit-button" src="../static/images/edit.png" alt="">
+            </a>
+            <a href="/delete/{{contact.0}}">
+                <img class="edit-button" src="../static/images/delete.png" alt="">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+
+
+
+{% endblock %}

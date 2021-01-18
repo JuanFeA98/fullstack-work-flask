@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2>Editar información.</h2>
+
+<form action="/update/{{contacto.0}}>" method="POST" class="AddForm">
+    <input type="text" name="name" placeholder="nombre" value="{{ contacto.1 }}">
+    <input type="text" name="phone" placeholder="phone" value="{{ contacto.2 }}">
+    <input type="text" name="email" placeholder="email" value="{{ contacto.3 }}">
+    <button type="submit">Save changes</button>
+</form>
+
+<div class="Home">
+    <a class="ComeBack" href="/">Volver a inicio</a>
+</div>
+{% endblock %}
